@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/InicioFragment">
+
+    <fragment
+        android:id="@+id/InicioFragment"
+        android:label="REVI Machinery"
+        android:name="com.joseantonio.historialproducto.InicioFragment"
+        tools:layout="@layout/fragment_inicio">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/LeerQrFragment" />
+        <action
+            android:id="@+id/action_InicioFragment_to_MachineFragment"
+            app:destination="@id/MachineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/LeerQrFragment"
+        android:label="LEER QR"
+        android:name="com.joseantonio.historialproducto.LeerQrFragment"
+        tools:layout="@layout/fragment_leer_qr">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/InicioFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_MachineFragment"
+            app:destination="@id/MachineFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MachineFragment"
+        android:label="Mi máquina"
+        android:name="com.joseantonio.historialproducto.MachineFragment"
+        tools:layout="@layout/fragment_machine">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/InicioFragment" />
+    </fragment>
+</navigation>

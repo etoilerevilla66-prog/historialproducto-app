@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/logorevi" />
+
+    <EditText
+        android:id="@+id/inNumeroSerie"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Número de serie: "
+        android:inputType="text"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/txtNumSerieStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#D00F0F" />
+
+    <Button
+        android:id="@+id/btnNumeroSerie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usar número de serie"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leer QR"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/miniexcavadora" />
+
+
+</LinearLayout>
+
